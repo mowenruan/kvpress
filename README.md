@@ -37,25 +37,6 @@ experiments/kvpress_repro/run_pythia_kvpress_repro.py
 | `snapkv` | `SnapKVPress` | 使用最近窗口 query 的 attention pattern 估计历史 KV 重要性，并做平滑。 |
 
 
-## 代码结构
-
-```text
-experiments/kvpress_repro/
-├── run_pythia_kvpress_repro.py       # 复现实验主脚本
-├── README.md                         # 实验目录说明和结果报告
-├── data_cache/                       # 固定 token 样本缓存，本地生成，不提交
-├── results_gpu/                      # GPU 正式结果，本地生成
-├── results_smoke/                    # CPU smoke test 结果
-├── results_gpu_smoke/                # GPU smoke test 结果
-└── results_cache_build/              # 样本缓存构建检查结果
-```
-
-更详细的工作说明见：
-
-```text
-docs/todo_test_work_report.md
-```
-
 ## 环境准备
 
 ### 创建或配置 conda 环境
